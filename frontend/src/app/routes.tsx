@@ -7,6 +7,7 @@ import ProtectedRoute from './ProtectedRoute';
 
 import LoginPage from '../pages/LoginPage';
 import HomePage from '../pages/HomePage';
+import WhiteboardPage from '../pages/WhiteboardPage';
 import NotFoundPage from '../pages/NotFoundPage';
 
 const AppRoutes = (): JSX.Element => {
@@ -28,11 +29,11 @@ const AppRoutes = (): JSX.Element => {
           }
         >
           <Route path="/home" element={<HomePage />} />
+          <Route path="/whiteboard/:id" element={<WhiteboardPage />} />
         </Route>
 
         {/* Redirect Root */}
         <Route path="/" element={<Navigate to="/home" replace />} />
-
         {/* 404 */}
         <Route path="*" element={<NotFoundPage />} />
 
