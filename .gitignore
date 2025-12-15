@@ -1,0 +1,25 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# ======================
+# OS / Editor
+# ======================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+docker-data/
+*.pid
+
+# Backend
+backend/node_modules/
+
+# Frontend
+frontend/node_modules/
